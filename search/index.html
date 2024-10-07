@@ -6,11 +6,6 @@
     <title>Google検索</title>
 </head>
 <body>
-    <h1>Google検索</h1>
-    <form id="searchForm">
-        <input type="text" id="query" placeholder="検索ワード" required>
-        <button type="submit">検索</button>
-    </form>
     <div id="results"></div>
 <script async src="https://cse.google.com/cse.js?cx=b73a5885c763d4aea">
 </script>
@@ -40,7 +35,7 @@
                 data.items.forEach(item => {
                     const resultItem = document.createElement('div');
                     resultItem.innerHTML = `
-                        <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
+                        <h3><a href="https://pokemogukunns.github.io/prokishi#${item.link}" target="_blank">${item.title}</a></h3>
                         <p>${item.snippet}</p>
                     `;
                     resultsDiv.appendChild(resultItem);
